@@ -1,0 +1,205 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title "Membership Card Pi Front Panel"
+Date "2021-01-05"
+Rev "1.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TIL311:TIL311 U3
+U 1 1 5FFB6532
+P 4750 4200
+F 0 "U3" H 4750 5570 50  0000 C CNN
+F 1 "TIL311" H 4750 5479 50  0000 C CNN
+F 2 "SnapEDA:DIP794W45P254L1969H508Q14" H 4750 4200 50  0001 L BNN
+F 3 "" H 4750 4200 50  0001 L BNN
+F 4 "DIP794W45P254L1969H508Q14" H 4750 4200 50  0001 L BNN "Package"
+F 5 "Rochester Electronics" H 4750 4200 50  0001 L BNN "Manufacturer"
+	1    4750 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L TIL311:TIL311 U4
+U 1 1 5FFB7338
+P 7600 4200
+F 0 "U4" H 7600 5570 50  0000 C CNN
+F 1 "TIL311" H 7600 5479 50  0000 C CNN
+F 2 "SnapEDA:DIP794W45P254L1969H508Q14" H 7600 4200 50  0001 L BNN
+F 3 "" H 7600 4200 50  0001 L BNN
+F 4 "DIP794W45P254L1969H508Q14" H 7600 4200 50  0001 L BNN "Package"
+F 5 "Rochester Electronics" H 7600 4200 50  0001 L BNN "Manufacturer"
+	1    7600 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 4750 3550 4750
+Wire Wire Line
+	6900 4750 6500 4750
+Wire Wire Line
+	6500 4750 6500 5450
+Wire Wire Line
+	6500 5450 3550 5450
+Wire Wire Line
+	3550 5450 3550 4750
+Connection ~ 3550 4750
+Wire Wire Line
+	3550 4750 2800 4750
+Wire Wire Line
+	4050 4550 3750 4550
+Wire Wire Line
+	6900 4550 6300 4550
+Wire Wire Line
+	6300 4550 6300 5250
+Wire Wire Line
+	6300 5250 3750 5250
+Wire Wire Line
+	3750 5250 3750 4550
+Connection ~ 3750 4550
+Wire Wire Line
+	3750 4550 2800 4550
+$Comp
+L power:GND #PWR023
+U 1 1 5FFBA54A
+P 8450 4950
+F 0 "#PWR023" H 8450 4700 50  0001 C CNN
+F 1 "GND" H 8455 4777 50  0000 C CNN
+F 2 "" H 8450 4950 50  0001 C CNN
+F 3 "" H 8450 4950 50  0001 C CNN
+	1    8450 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 4750 8450 4750
+Wire Wire Line
+	8450 4750 8450 4950
+$Comp
+L power:+5V #PWR020
+U 1 1 5FFBB4EE
+P 5600 2750
+F 0 "#PWR020" H 5600 2600 50  0001 C CNN
+F 1 "+5V" H 5615 2923 50  0000 C CNN
+F 2 "" H 5600 2750 50  0001 C CNN
+F 3 "" H 5600 2750 50  0001 C CNN
+	1    5600 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR022
+U 1 1 5FFBBA8B
+P 8450 2750
+F 0 "#PWR022" H 8450 2600 50  0001 C CNN
+F 1 "+5V" H 8465 2923 50  0000 C CNN
+F 2 "" H 8450 2750 50  0001 C CNN
+F 3 "" H 8450 2750 50  0001 C CNN
+	1    8450 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 3150 5600 3150
+Wire Wire Line
+	5600 3150 5600 2750
+Wire Wire Line
+	8300 3150 8450 3150
+Wire Wire Line
+	8450 3150 8450 2750
+Wire Wire Line
+	5450 3350 5600 3350
+Wire Wire Line
+	5600 3350 5600 3150
+Connection ~ 5600 3150
+Wire Wire Line
+	8300 3350 8450 3350
+Wire Wire Line
+	8450 3350 8450 3150
+Connection ~ 8450 3150
+NoConn ~ 6900 4050
+NoConn ~ 6900 4250
+NoConn ~ 4050 4250
+NoConn ~ 4050 4050
+Entry Wire Line
+	6350 3650 6450 3750
+Entry Wire Line
+	6350 3450 6450 3550
+Entry Wire Line
+	6350 3250 6450 3350
+Entry Wire Line
+	6350 3050 6450 3150
+Wire Wire Line
+	6450 3750 6900 3750
+Wire Wire Line
+	6450 3550 6900 3550
+Wire Wire Line
+	6450 3350 6900 3350
+Wire Wire Line
+	6450 3150 6900 3150
+Text Label 6550 3150 0    50   ~ 0
+D0
+Text Label 6550 3350 0    50   ~ 0
+D1
+Text Label 6550 3550 0    50   ~ 0
+D2
+Text Label 6550 3750 0    50   ~ 0
+D3
+Entry Wire Line
+	3500 3650 3600 3750
+Entry Wire Line
+	3500 3450 3600 3550
+Entry Wire Line
+	3500 3250 3600 3350
+Entry Wire Line
+	3500 3050 3600 3150
+Wire Wire Line
+	3600 3750 4050 3750
+Wire Wire Line
+	3600 3550 4050 3550
+Wire Wire Line
+	3600 3350 4050 3350
+Wire Wire Line
+	3600 3150 4050 3150
+Text Label 3700 3150 0    50   ~ 0
+D4
+Text Label 3700 3350 0    50   ~ 0
+D5
+Text Label 3700 3550 0    50   ~ 0
+D6
+Text Label 3700 3750 0    50   ~ 0
+D7
+Wire Bus Line
+	6350 2000 3500 2000
+Connection ~ 3500 2000
+Wire Bus Line
+	3500 2000 2800 2000
+$Comp
+L power:GND #PWR021
+U 1 1 5FFC4557
+P 5600 4950
+F 0 "#PWR021" H 5600 4700 50  0001 C CNN
+F 1 "GND" H 5605 4777 50  0000 C CNN
+F 2 "" H 5600 4950 50  0001 C CNN
+F 3 "" H 5600 4950 50  0001 C CNN
+	1    5600 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 4750 5600 4750
+Wire Wire Line
+	5600 4750 5600 4950
+Text HLabel 2800 4550 0    50   Input ~ 0
+STB
+Text HLabel 2800 4750 0    50   Input ~ 0
+BI
+Text HLabel 2800 2000 0    50   Input ~ 0
+D[7..0]
+Wire Bus Line
+	6350 2000 6350 3650
+Wire Bus Line
+	3500 2000 3500 3650
+$EndSCHEMATC
